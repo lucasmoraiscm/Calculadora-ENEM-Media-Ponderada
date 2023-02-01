@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora ENEM Média Ponderada</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="title">
+        <h1>ENEM - Média Ponderada</h1>
+    </div>
+    <div id="redacao">
+        <h2>Redação</h2>
+        Nota <input type="number" name="notaRedacao" id="notaRedacao"><br>
+        Peso <input type="number" name="pesoRedacao" id="pesoRedacao">
+    </div>
+    <div id="linguagens">
+        <h2>Linguagens</h2>
+        Nota <input type="number" name="notaLinguagens" id="notaLinguagens"><br>
+        Peso <input type="number" name="pesoLinguagens" id="pesoLinguagens">
+    </div>
+    <div id="matematica">
+        <h2>Matemática</h2>
+        Nota <input type="number" name="notaMatematica" id="notaMatematica"><br>
+        Peso <input type="number" name="pesoMatematica" id="pesoMatematica">
+    </div>
+    <div id="natureza">
+        <h2>Natureza</h2>
+        Nota <input type="number" name="notaNatureza" id="notaNatureza"><br>
+        Peso <input type="number" name="pesoNatureza" id="pesoNatureza">
+    </div>
+    <div id="humanas">
+        <h2>Humanas</h2>
+        Nota <input type="number" name="notaHumanas" id="notaHumanas"><br>
+        Peso <input type="number" name="pesoHumanas" id="pesoHumanas">
+    </div>
+    <div id="resultado">
+        <div id="textoResultado"></div>
+        <input id="btnResultado" type="button" value="Calcular" onclick="calcular()">
+    </div>
+    <div id="footer">
+        <p>
+            © Desenvolvido por Lucas Morais - 2023 <br>
+            <a id="linkProjeto" href="https://github.com/lucasmoraiscm/Calculadora-ENEM-Media-Ponderada">
+                <i>Link para o projeto</i>
+            </a>
+        </p>
+    </div>
+</body>
+</html>
