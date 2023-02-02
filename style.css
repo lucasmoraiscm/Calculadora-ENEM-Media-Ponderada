@@ -7,8 +7,8 @@ header {
     color: white;
     text-align: center;
     border-radius: 10px;
-    height: 50px;
     line-height: 50px;
+    height: 50px;
 }
 
 #redacao {
@@ -16,7 +16,7 @@ header {
     border-radius: 20px;
     text-align: center;
     padding: 20px;
-    margin: 20px;
+    margin: 20px
 }
 
 #notaRedacao {
@@ -36,7 +36,7 @@ header {
     border-radius: 20px;
     text-align: center;
     padding: 20px;
-    margin: 20px;
+    margin: 20px
 }
 
 #notaLinguagens {
@@ -56,7 +56,7 @@ header {
     border-radius: 20px;
     text-align: center;
     padding: 20px;
-    margin: 20px;
+    margin: 20px
 }
 
 #notaMatematica {
@@ -76,7 +76,7 @@ header {
     border-radius: 20px;
     text-align: center;
     padding: 20px;
-    margin: 20px;
+    margin: 20px
 }
 
 #notaNatureza {
@@ -96,7 +96,7 @@ header {
     border-radius: 20px;
     text-align: center;
     padding: 20px;
-    margin: 20px;
+    margin: 20px
 }
 
 #notaHumanas {
