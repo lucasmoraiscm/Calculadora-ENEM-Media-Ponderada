@@ -2,11 +2,11 @@ body {
     font: normal 12pt Trebuchet MS , sans-serif;
 }
 
-#title {
+header {
     background: rgb(60, 60, 210);
     color: white;
     text-align: center;
-    border-radius: 20px;
+    border-radius: 10px;
     height: 50px;
     line-height: 50px;
 }
@@ -15,7 +15,7 @@ body {
     border: 2px solid rgb(60, 60, 210);
     border-radius: 20px;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     margin: 20px;
 }
 
@@ -28,13 +28,14 @@ body {
 #pesoRedacao {
     border-radius: 20px;
     text-align: center;
+    margin: 5px;
 }
 
 #linguagens {
     border: 2px solid rgb(60, 60, 210);
     border-radius: 20px;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     margin: 20px;
 }
 
@@ -47,13 +48,14 @@ body {
 #pesoLinguagens {
     border-radius: 20px;
     text-align: center;
+    margin: 5px;
 }
 
 #matematica {
     border: 2px solid rgb(60, 60, 210);
     border-radius: 20px;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     margin: 20px;
 }
 
@@ -66,13 +68,14 @@ body {
 #pesoMatematica {
     border-radius: 20px;
     text-align: center;
+    margin: 5px;
 }
 
 #natureza {
     border: 2px solid rgb(60, 60, 210);
     border-radius: 20px;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     margin: 20px;
 }
 
@@ -85,13 +88,14 @@ body {
 #pesoNatureza {
     border-radius: 20px;
     text-align: center;
+    margin: 5px;
 }
 
 #humanas {
     border: 2px solid rgb(60, 60, 210);
     border-radius: 20px;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     margin: 20px;
 }
 
@@ -104,6 +108,7 @@ body {
 #pesoHumanas {
     border-radius: 20px;
     text-align: center;
+    margin: 5px;
 }
 
 #resultado {
@@ -112,7 +117,7 @@ body {
 }
 
 #btnResultado {
-    background: rgb(41, 234, 41);
+    background: rgb(29, 223, 29);
     font-family: Trebuchet MS , sans-serif;
     color: white;
     border-radius: 20px;
@@ -121,10 +126,10 @@ body {
     margin: 20px;
 }
 
-#footer {
+footer {
     background: rgb(60, 60, 210);
     color: white;
-    border-radius: 20px;
+    border-radius: 10px;
     text-align: center;
     height: 40px;
 }
@@ -134,7 +139,7 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-    #title {
+    header {
         font: normal 8pt Trebuchet MS , sans-serif;
         line-height: 50px;
     }
