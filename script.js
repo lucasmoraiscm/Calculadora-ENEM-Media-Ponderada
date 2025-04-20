@@ -1,30 +1,37 @@
-function calcular() {
-    var getRed = document.querySelector('input#notaRedacao')
-    var notaRed = Number(getRed.value)
-    var getPesoRed = document.querySelector('input#pesoRedacao')
-    var pesoRed = Number(getPesoRed.value)
+function calcularMediaPonderada() {
+    const getRedacao = document.querySelector('input#notaRedacao')
+    const notaRedacao = Number(getRedacao.value)
+    const getPesoRedacao = document.querySelector('input#pesoRedacao')
+    const pesoRedacao = Number(getPesoRedacao.value)
 
-    var getLin = document.querySelector('input#notaLinguagens')
-    var notaLin = Number(getLin.value)
-    var getPesoLin = document.querySelector('input#pesoLinguagens')
-    var pesoLin = Number(getPesoLin.value)
+    const getLinguagens = document.querySelector('input#notaLinguagens')
+    const notaLinguagens = Number(getLinguagens.value)
+    const getPesoLinguagens = document.querySelector('input#pesoLinguagens')
+    const pesoLinguagens = Number(getPesoLinguagens.value)
 
-    var getMat = document.querySelector('input#notaMatematica')
-    var notaMat = Number(getMat.value)
-    var getPesoMat = document.querySelector('input#pesoMatematica')
-    var pesoMat = Number(getPesoMat.value)
+    const getMatematica = document.querySelector('input#notaMatematica')
+    const notaMatematica = Number(getMatematica.value)
+    const getPesoMatematica = document.querySelector('input#pesoMatematica')
+    const pesoMatematica = Number(getPesoMatematica.value)
 
-    var getNat = document.querySelector('input#notaNatureza')
-    var notaNat = Number(getNat.value)
-    var getPesoNat = document.querySelector('input#pesoNatureza')
-    var pesoNat = Number(getPesoNat.value)
+    const getNatureza = document.querySelector('input#notaNatureza')
+    const notaNatureza = Number(getNatureza.value)
+    const getPesoNatureza = document.querySelector('input#pesoNatureza')
+    const pesoNatureza = Number(getPesoNatureza.value)
 
-    var getHum = document.querySelector('input#notaHumanas')
-    var notaHum = Number(getHum.value)
-    var getPesoHum = document.querySelector('input#pesoHumanas')
-    var pesoHum = Number(getPesoHum.value)
+    const getHumanas = document.querySelector('input#notaHumanas')
+    const notaHumanas = Number(getHumanas.value)
+    const getPesoHumanas = document.querySelector('input#pesoHumanas')
+    const pesoHumanas = Number(getPesoHumanas.value)
 
-    var media = ((notaRed*pesoRed)+(notaLin*pesoLin)+(notaMat*pesoMat)+(notaNat*pesoNat)+(notaHum*pesoHum)) / (pesoRed+pesoLin+pesoMat+pesoNat+pesoHum)
-
-    textoResultado.innerHTML = `<strong>Sua média é ${media.toFixed(2)}</strong>`
+    if (notaRedacao >= 0 && notaLinguagens > 0 && notaMatematica > 0 && notaNatureza > 0 && notaHumanas > 0) {
+        if (pesoRedacao > 0 && pesoLinguagens > 0 && pesoMatematica > 0 && pesoNatureza > 0 && pesoHumanas > 0) {
+            const mediaPonderada = ((notaRedacao*pesoRedacao) + (notaLinguagens*pesoLinguagens) + (notaMatematica*pesoMatematica) + (notaNatureza*pesoNatureza) + (notaHumanas*pesoHumanas)) / (pesoRedacao + pesoLinguagens + pesoMatematica + pesoNatureza + pesoHumanas)
+            textoResultado.innerHTML = `<strong>Sua média é ${mediaPonderada.toFixed(2)}</strong>`
+        } else {
+            textoResultado.innerHTML = `<strong>Peso inválido</strong>`
+        }
+    } else {
+        textoResultado.innerHTML = `<strong>Nota inválida</strong>`
+    }
 }
