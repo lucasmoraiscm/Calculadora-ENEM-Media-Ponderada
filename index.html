@@ -4,52 +4,137 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora ENEM Média Ponderada</title>
+    <title>Calculadora ENEM - Média Ponderada</title>
+    <link rel="icon" href="./img/calculadora.png" type="image/png">
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>ENEM - Média Ponderada</h1>
+        <div class="logo">
+            <img src="./img/calculadora.png" alt="logo">
+        </div>
+        <div class="title">
+            <h1>Calculadora ENEM - Média Ponderada</h1>
+        </div>
     </header>
-    <section>
-        <div id="redacao">
-            <h2>Redação</h2>
-            Nota <input type="number" name="notaRedacao" id="notaRedacao"><br>
-            Peso <input type="number" name="pesoRedacao" id="pesoRedacao">
-        </div>
-        <div id="linguagens">
-            <h2>Linguagens</h2>
-            Nota <input type="number" name="notaLinguagens" id="notaLinguagens"><br>
-            Peso <input type="number" name="pesoLinguagens" id="pesoLinguagens">
-        </div>
-        <div id="matematica">
-            <h2>Matemática</h2>
-            Nota <input type="number" name="notaMatematica" id="notaMatematica"><br>
-            Peso <input type="number" name="pesoMatematica" id="pesoMatematica">
-        </div>
-        <div id="natureza">
-            <h2>Natureza</h2>
-            Nota <input type="number" name="notaNatureza" id="notaNatureza"><br>
-            Peso <input type="number" name="pesoNatureza" id="pesoNatureza">
-        </div>
-        <div id="humanas">
-            <h2>Humanas</h2>
-            Nota <input type="number" name="notaHumanas" id="notaHumanas"><br>
-            Peso <input type="number" name="pesoHumanas" id="pesoHumanas">
-        </div>
-        <div id="resultado">
-            <div id="textoResultado"></div>
-            <input id="btnResultado" type="button" value="Calcular" onclick="calcular()">
+
+    <section class="media-ponderada-section">
+        <div class="media-ponderada">
+            <div class="areas-conhecimento">
+                <div class="area-conhecimento">
+                    <div class="area-conhecimento-head">
+                        <div class="area-conhecimento-logo">
+                            <img src="./img/redacao.png" alt="logo Redação">
+                        </div>
+                        <div class="area-conhecimento-title">
+                            <h2>Redação</h2>
+                        </div>
+                    </div>
+                    <div class="area-conhecimento-dados">
+                        <div class="area-conhecimento-nota">
+                            <h3>Nota</h3>
+                            <input type="number" class="area-conhecimento-input" id="notaRedacao" placeholder="Digite a nota">
+                        </div>
+                        <div class="area-conhecimento-peso">
+                            <h3>Peso</h3>
+                            <input type="number" class="area-conhecimento-input" id="pesoRedacao" placeholder="Digite o peso">
+                        </div>
+                    </div>
+                </div>
+                <div class="area-conhecimento">
+                    <div class="area-conhecimento-head">
+                        <div class="area-conhecimento-logo">
+                            <img src="./img/linguagens.png" alt="logo Linguagens">
+                        </div>
+                        <div class="area-conhecimento-title">
+                            <h2>Linguagens</h2>
+                        </div>
+                    </div>
+                    <div class="area-conhecimento-dados">
+                        <div class="area-conhecimento-nota">
+                            <h3>Nota</h3>
+                            <input type="number" class="area-conhecimento-input" id="notaLinguagens" placeholder="Digite a nota">
+                        </div>
+                        <div class="area-conhecimento-peso">
+                            <h3>Peso</h3>
+                            <input type="number" class="area-conhecimento-input" id="pesoLinguagens" placeholder="Digite o peso">
+                        </div>
+                    </div>
+                </div>
+                <div class="area-conhecimento">
+                    <div class="area-conhecimento-head">
+                        <div class="area-conhecimento-logo">
+                            <img src="./img/matematica.png" alt="logo Matemática">
+                        </div>
+                        <div class="area-conhecimento-title">
+                            <h2>Matemática</h2>   
+                        </div>
+                    </div>
+                    <div class="area-conhecimento-dados">
+                        <div class="area-conhecimento-nota">
+                            <h3>Nota</h3>
+                            <input type="number" class="area-conhecimento-input" id="notaMatematica" placeholder="Digite a nota">
+                        </div>
+                        <div class="area-conhecimento-peso">
+                            <h3>Peso</h3>
+                            <input type="number" class="area-conhecimento-input" id="pesoMatematica" placeholder="Digite o peso">
+                        </div>
+                    </div>    
+                </div>
+                <div class="area-conhecimento">
+                    <div class="area-conhecimento-head">
+                        <div class="area-conhecimento-logo">
+                            <img src="./img/natureza.png" alt="logo Natureza">
+                        </div>
+                        <div class="area-conhecimento-title">
+                            <h2>Natureza</h2>
+                        </div>
+                    </div>
+                    <div class="area-conhecimento-dados">
+                        <div class="area-conhecimento-nota">
+                            <h3>Nota</h3>
+                            <input type="number" class="area-conhecimento-input" id="notaNatureza" placeholder="Digite a nota">
+                        </div>
+                        <div class="area-conhecimento-peso">
+                            <h3>Peso</h3>
+                            <input type="number" class="area-conhecimento-input" id="pesoNatureza" placeholder="Digite o peso">
+                        </div>
+                    </div>
+                </div>
+                <div class="area-conhecimento">
+                    <div class="area-conhecimento-head">
+                        <div class="area-conhecimento-logo">
+                            <img src="./img/humanas.png" alt="logo Humanas">
+                        </div>
+                        <div class="area-conhecimento-title">
+                            <h2>Humanas</h2>
+                        </div>
+                    </div>
+                    <div class="area-conhecimento-dados">
+                        <div class="area-conhecimento-nota">
+                            <h3>Nota</h3>
+                            <input type="number" class="area-conhecimento-input" id="notaHumanas" placeholder="Digite a nota">
+                        </div>
+                        <div class="area-conhecimento-peso">
+                            <h3>Peso</h3>
+                            <input type="number" class="area-conhecimento-input" id="pesoHumanas" placeholder="Digite o peso">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="media-ponderada-resultado" id="resultado">
+                <p class="media-ponderada-resultado-texto" id="textoResultado"></p>
+                <input class="media-ponderada-resultado-button" type="button" value="Calcular" onclick="calcularMediaPonderada()">
+            </div>
         </div>
     </section>
+
     <footer>
-        <p>
-            © Desenvolvido por Lucas Morais - 2023 <br>
-            <a id="linkProjeto" href="https://github.com/lucasmoraiscm/Calculadora-ENEM-Media-Ponderada">
-                <i>Link para o projeto</i>
-            </a>
-        </p>
+        <p>© Desenvolvido por Lucas Morais - 2025</p>
+        <a class="link-projeto" href="https://github.com/lucasmoraiscm/Calculadora-ENEM-Media-Ponderada" target="_blank">
+            <i>Link para o projeto</i>
+        </a>
     </footer>
 </body>
 </html>
